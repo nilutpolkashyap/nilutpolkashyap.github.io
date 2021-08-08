@@ -322,7 +322,7 @@ html {
 /* Project Body */
 .projectbody {
   /*background: linear-gradient(to bottom, #663300 0%, #120A2A 100%);*/
-  background: linear-gradient(0deg, #2A0A12, #120A2A, #181907, #191007);
+  background: linear-gradient(0deg, #1ea83d, #3610a4, #1ea6a8, #1ea861);
 }
 
 
@@ -331,6 +331,19 @@ html {
   text-align: center;
   color: yellow;
   font-size: 200%;
+}
+
+.tech_table, th, td{
+  
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+td{
+  width: 350px;
 }
 
 
