@@ -3,20 +3,6 @@ html {
 }
 
 
-.projectbox {
-
-  background-color: lightblue;
-  width: 60%;
-  border: 15px;
-  border-color: #0B3B0B;
-  border-style: solid;
-  padding: 20px;
-  margin: auto;
-  background: linear-gradient(45deg, #2A0A12, #120A2A, #181907, #191007);
-  /*background:   url('bricks.jpg'); */
-}
-
-
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -322,7 +308,20 @@ html {
 /* Project Body */
 .projectbody {
   /*background: linear-gradient(to bottom, #663300 0%, #120A2A 100%);*/
-  background: linear-gradient(0deg, #1ea83d, #3610a4, #1ea6a8, #1ea861);
+  background: linear-gradient(0deg, #8410eb, #3610a4, #349ddd, #8e34dd);
+}
+
+.projectbox {
+
+  background-color: lightblue;
+  width: 60%;
+  border: 15px;
+  border-color: #0B3B0B;
+  border-style: solid;
+  padding: 20px;
+  margin: auto;
+  /*background: linear-gradient(45deg, #2A0A12, #120A2A, #181907, #191007); */
+  /*background:   url('bricks.jpg'); */
 }
 
 
@@ -335,15 +334,23 @@ html {
 
 .tech_table, th, td{
   
-  border: 1px solid black;
+  border: 1px solid #18232a;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: #18232a;
+  color: #FFFFFF;
 }
 
 td{
-  width: 350px;
+  width: 360px;
+}
+
+th{
+  padding-top: 35px;
+  font-size: 35px;
+  padding-bottom: 50px;
 }
 
 
