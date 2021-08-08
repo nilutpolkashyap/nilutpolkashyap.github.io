@@ -1,13 +1,19 @@
+html {
+  background-color: black;  
+}
+
+
 .projectbox {
 
   background-color: lightblue;
   width: 60%;
   border: 15px;
-  border-color: SlateBlue;
+  border-color: #0B3B0B;
   border-style: solid;
   padding: 20px;
   margin: auto;
-  background:   url('bricks.jpg');
+  background: linear-gradient(45deg, #2A0A12, #120A2A, #181907, #191007);
+  /*background:   url('bricks.jpg'); */
 }
 
 
@@ -53,6 +59,7 @@
 
 .box {
   border: 5px solid #555;
+  float: right;
 }
 
 .box:hover{
@@ -61,7 +68,7 @@
   box-shadow: 0 0 10px #ccc;
 }
 
-.projectname {
+.contactme {
   font-size: 25px;
   color: #f65206  ;
   
@@ -74,20 +81,19 @@
   }
   
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 30px #fff, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6, 0 0 90px #ff4da6;
   }
 }
 
 
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
+/* Navigation bar */
 
 #navbar {
+  position: sticky;
+  z-index:10;
   overflow: hidden;
   background-color: #333;
+  font-family: "Georgia", Times, serif;
 }
 
 #navbar a {
@@ -108,7 +114,18 @@
 #navbar a.active {
   background-color: #04AA6D;
   color: white;
-}
+} 
+
+#navbar a.social {
+  background-color: #66ffff;
+  color: black;
+  border: 5px;
+  border-color: #000000;
+  border-style: solid;
+  margin: auto;
+} 
+
+
 
 .content {
   padding: 12px;
@@ -125,52 +142,322 @@
 }
 
 
-body {
-  margin: 0;
+/* Page Header */
 
+.header {
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #000000, #071918, #0B0B3B, #191007);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding: 30px;
+    text-align: center;
+    color: #04B404;
 }
 
-.background {
-  width: 100vw;
-  height: 100vh;
-  background: #3E1E68;
-}
-
-$particleSize: 20vmin;
-$animationDuration: 6s;
-$amount: 20;
-.background span {
-  width: $particleSize;
-  height: $particleSize;
-  border-radius: $particleSize;
-  backface-visibility: hidden;
-  position: absolute;
-  animation-name: move;
-  animation-duration: $animationDuration;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  $colors: (
-    #583C87,
-    #E45A84,
-    #FFACAC
-  );
-  @for $i from 1 through $amount {
-    &:nth-child(#{$i}) {
-      color: nth($colors, random(length($colors)));
-      top: random(100) * 1%;
-      left: random(100) * 1%;
-      animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
-      animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
-      transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
-      $blurRadius: (random() + 0.5) * $particleSize * 0.5;
-      $x: if(random() > 0.5, -1, 1);
-      box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
     }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+/* Name Header Typewriting Effect*/
+
+.css-typing p {
+  border-right: .15em solid orange;
+  font-family: "Courier";
+  
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 15em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 24em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+  width: 7.3em;
+  opacity: 0;
+  -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+  animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
   }
 }
 
-@keyframes move {
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
   100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+
+
+/* Name Header*/
+.nameheader {
+  font-size: 60px;
+  padding-left: 40px;
+  font-weight: 600;
+}
+
+.quoteheader {
+  font-size: 30px;
+  padding-left: 60px;
+  font-weight: 600;
+}
+
+/* Header image */
+.headerimage {
+  width: 20%;
+  border: 5px solid #555;
+}
+
+/* Project Body */
+.projectbody {
+  /*background: linear-gradient(to bottom, #663300 0%, #120A2A 100%);*/
+  background: linear-gradient(0deg, #2A0A12, #120A2A, #181907, #191007);
+}
+
+
+/* body header */
+.bodyhead{
+  text-align: center;
+  color: yellow;
+  font-size: 200%;
+}
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top:30px;
+  
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 40%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 3.25%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
   }
 }
