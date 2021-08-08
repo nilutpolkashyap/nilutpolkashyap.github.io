@@ -6,12 +6,14 @@ html {
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #0cfb9a;
   border: none;
-  color: #05be32;
+  color:#FFFFFF;
   text-align: center;
-  font-size: 15px;
-  padding: 15px;
+  font-size: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
   width: 200px;
   transition: all 0.5s;
   cursor: pointer;
@@ -46,6 +48,7 @@ html {
 .box {
   border: 5px solid #555;
   float: right;
+  border-radius: 20px;
 }
 
 .box:hover{
@@ -311,6 +314,27 @@ html {
   background: linear-gradient(0deg, #8410eb, #3610a4, #349ddd, #8e34dd);
 }
 
+
+.about_me_body{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.about_me{
+  padding-left: 40px;
+  background-color: #5f06fa;
+  color: #FFFFFF;
+  border-style: double;
+  border-radius: 15px;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 10px;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .projectbox {
 
   background-color: lightblue;
@@ -318,8 +342,10 @@ html {
   border: 15px;
   border-color: #0B3B0B;
   border-style: solid;
+  border-radius: 10px;
   padding: 20px;
   margin: auto;
+  font-family:'Times New Roman', Times, serif;
   /*background: linear-gradient(45deg, #2A0A12, #120A2A, #181907, #191007); */
   /*background:   url('bricks.jpg'); */
 }
@@ -359,9 +385,10 @@ th{
   font-size: 18px;
 }
 
-#projects_head{
+.sub_body_head{
   font-size: 40px;
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
