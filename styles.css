@@ -359,6 +359,11 @@ th{
   font-size: 18px;
 }
 
+#projects_head{
+  font-size: 40px;
+  text-align: center;
+}
+
 
 
 /* The actual timeline (the vertical ruler) */
