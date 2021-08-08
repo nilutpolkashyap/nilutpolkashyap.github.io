@@ -78,14 +78,14 @@ html {
   position: sticky;
   z-index:10;
   overflow: hidden;
-  background-color: #333;
+  background-color: #09a8f7;
   font-family: "Georgia", Times, serif;
 }
 
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color:#000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -341,6 +341,7 @@ html {
   text-align: center;
   background-color: #18232a;
   color: #FFFFFF;
+  padding-bottom: 30px;
 }
 
 td{
@@ -351,6 +352,11 @@ th{
   padding-top: 35px;
   font-size: 35px;
   padding-bottom: 50px;
+}
+
+.table_topics{
+  color: #8e09f7;
+  font-size: 18px;
 }
 
 
