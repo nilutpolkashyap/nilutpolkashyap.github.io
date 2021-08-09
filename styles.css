@@ -389,8 +389,40 @@ th{
   font-size: 40px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: auto;
 }
 
+
+.work_experience{
+  border: 1px solid black;
+  border-radius: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 300px;
+  padding-right: 300px;
+  
+}
+
+
+.experience_button{
+  border-radius: 35px;
+  padding: 30px;
+  padding-top: 15px;
+}
+
+
+.download_cv{
+  background-color: #0eeb62;
+  font-size: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-radius:  35px;
+}
+
+.download_cv:hover{
+  background-color: #1adbbe;
+}
 
 
 /* The actual timeline (the vertical ruler) */
