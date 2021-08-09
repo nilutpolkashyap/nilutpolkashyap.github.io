@@ -57,9 +57,9 @@ html {
   box-shadow: 0 0 10px #ccc;
 }
 
-.contactme {
+.glowtext {
   font-size: 25px;
-  color: #f65206  ;
+  color: #df1f13  ;
   
   animation: glow 1s ease-in-out infinite alternate;
 }
@@ -81,14 +81,14 @@ html {
   position: sticky;
   z-index:10;
   overflow: hidden;
-  background-color: #09a8f7;
+  background-color: #3414b6;
   font-family: "Georgia", Times, serif;
 }
 
 #navbar a {
   float: left;
   display: block;
-  color:#000000;
+  color:#FFFFFF;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -101,7 +101,7 @@ html {
 }
 
 #navbar a.active {
-  background-color: #04AA6D;
+  background-color: #7c13df;
   color: white;
 } 
 
@@ -135,7 +135,7 @@ html {
 
 .header {
     /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-    background: linear-gradient(-45deg, #000000, #071918, #0B0B3B, #191007);
+    background: linear-gradient(-45deg, #10095b, #0b206d, #0B0B3B, #3f0847);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     padding: 30px;
@@ -304,8 +304,9 @@ html {
 
 /* Header image */
 .headerimage {
-  width: 20%;
+  width: 25%;
   border: 5px solid #555;
+  border-radius: 115px;
 }
 
 /* Project Body */
@@ -337,15 +338,17 @@ html {
 
 .projectbox {
 
-  background-color: lightblue;
+  background-color: #000000;
   width: 60%;
   border: 15px;
+  color: #FFFFFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-color: #0B3B0B;
   border-style: solid;
   border-radius: 10px;
   padding: 20px;
   margin: auto;
-  font-family:'Times New Roman', Times, serif;
+
   /*background: linear-gradient(45deg, #2A0A12, #120A2A, #181907, #191007); */
   /*background:   url('bricks.jpg'); */
 }
@@ -396,12 +399,13 @@ th{
 .work_experience{
   border:#000000;
   border-radius: 15px;
+  border-width: 50px;
   color: #FFFFFF;
   text-align: left;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 270px;
+  margin-right: 270px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  height: 220px;
   background-color: #000000;
   padding-left: 30px;
   padding-right: 30px;
@@ -413,9 +417,14 @@ th{
 
 
 .experience_button{
-  border-radius: 35px;
-  padding: 30px;
-  padding-top: 15px;
+  background-color: #8410eb;
+  font-size: 21px;
+  border: #000000;
+  border-radius: 20px;
+  padding: 11px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #FFFFFF;
 }
 
 
