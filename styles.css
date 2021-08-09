@@ -389,18 +389,27 @@ th{
   font-size: 40px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: auto;
+  
 }
 
 
 .work_experience{
-  border: 1px solid black;
-  border-radius: 30px;
+  border:#000000;
+  border-radius: 15px;
+  color: #FFFFFF;
+  text-align: left;
+  margin-left: 300px;
+  margin-right: 300px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-left: 300px;
-  padding-right: 300px;
-  
+
+  background-color: #000000;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 25px;
+  padding-bottom: 20px ;
 }
+
+
 
 
 .experience_button{
