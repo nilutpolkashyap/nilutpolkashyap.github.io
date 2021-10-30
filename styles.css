@@ -118,6 +118,11 @@ html {
 
 .content {
   padding: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content-para {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .sticky {
