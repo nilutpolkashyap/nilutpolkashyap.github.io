@@ -1,5 +1,5 @@
 html {
-  background-color: black;  
+  background: linear-gradient(-45deg, #10095b, #0b206d, #0B0B3B, #3f0847);
 }
 
 
@@ -147,6 +147,10 @@ html {
     text-align: center;
     color: #04B404;
 }
+
+/* .contact_form {
+  background: linear-gradient(-45deg, #10095b, #0b206d, #0B0B3B, #3f0847);
+} */
 
 @keyframes gradient {
     0% {
