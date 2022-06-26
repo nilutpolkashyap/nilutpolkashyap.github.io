@@ -379,6 +379,14 @@ html {
   /*background:   url('bricks.jpg'); */
 }
 
+.projectname{
+  font-size: 180%;
+}
+
+.jobname{
+  font-size: 150%;
+}
+
 
 /* body header */
 .bodyhead{
