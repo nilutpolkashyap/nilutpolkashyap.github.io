@@ -318,7 +318,7 @@ html {
 
 /* Header image */
 .headerimage {
-  width: 18vw;
+  width: 12vw;
   height: auto;
   border: 5px solid #555;
   border-radius: 115px;
@@ -326,7 +326,7 @@ html {
 }
 
 .introimage {
-  width: 40vw;
+  width: 25vw;
   height: auto;
   border: 5px solid #555;
   border-radius: 115px;
