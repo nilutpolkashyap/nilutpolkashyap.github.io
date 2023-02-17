@@ -45,6 +45,23 @@ html {
   right: 0;
 }
 
+.skill_button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #087ae3;
+  border: none;
+  color:#FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
 .project_image_box {
   border: 5px solid #555;
   width: 30%;
@@ -339,12 +356,10 @@ html {
 }
 
 
-.about_me_body{
-  /* padding-left: 200px;
-  padding-right: 200px; */
+/* .about_me_body{
   width: 75vw;
   margin: auto;
-}
+} */
 
 .about_me{
   /* padding-left: 40px; */
@@ -359,6 +374,25 @@ html {
   padding-bottom: 10px;
   /* margin-right: auto; */
   font-family: Arial, Helvetica, sans-serif;
+  width: 75vw;
+  margin: auto;
+}
+
+.skills_box{
+  /* padding-left: 40px; */
+  background-color: #ed6b08;
+  color: #FFFFFF;
+  border-style: double;
+  border-radius: 15px;
+  /* margin-left: auto; */
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  /* margin-right: auto; */
+  font-family: Arial, Helvetica, sans-serif;
+  width: 75vw;
+  margin: auto;
 }
 
 .projectbox {
