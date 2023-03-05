@@ -335,7 +335,7 @@ html {
 
 /* Header image */
 .headerimage {
-  width: 12vw;
+  width: 18vw;
   height: auto;
   border: 5px solid #555;
   border-radius: 115px;
@@ -343,7 +343,7 @@ html {
 }
 
 .introimage {
-  width: 25vw;
+  width: 40vw;
   height: auto;
   border: 5px solid #555;
   border-radius: 115px;
