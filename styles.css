@@ -69,6 +69,13 @@ html {
   border-radius: 20px;
 }
 
+.project_image_left {
+  border: 5px solid #555;
+  width: 30%;
+  float: left;
+  border-radius: 20px;
+}
+
 .project_image_box:hover{
   -moz-box-shadow: 0 0 10px #ccc;
   -webkit-box-shadow: 0 0 10px #ccc;
