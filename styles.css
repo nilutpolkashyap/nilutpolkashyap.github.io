@@ -94,7 +94,6 @@ html {
 
 
 /* Navigation bar */
-
 #navbar {
   position: sticky;
   z-index:10;
@@ -349,8 +348,8 @@ html {
   border-radius: 115px;
 }
 
-/* Project Body */
-.projectbody {
+/* Main Body */
+.mainbody {
   /*background: linear-gradient(to bottom, #663300 0%, #120A2A 100%);*/
   background: linear-gradient(0deg, #8410eb, #3610a4, #349ddd, #8e34dd);
 }
