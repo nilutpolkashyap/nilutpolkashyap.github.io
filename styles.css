@@ -367,10 +367,12 @@ html {
   border-style: double;
   border-radius: 15px;
   /* margin-left: auto; */
-  padding-top: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-top: 10px; */
+  padding-left: 30px;
+  padding-right: 30px;
+  /* padding-bottom: 10px; */
   /* margin-right: auto; */
   font-family: Arial, Helvetica, sans-serif;
   width: 75vw;
@@ -484,8 +486,8 @@ th{
 }
 
 .table_topics{
-  color: #9d45e1;
-  font-size: 18px;
+  color: #a6ccc6;
+  font-size: 20px;
 }
 
   /* #tech_header{
@@ -496,7 +498,6 @@ th{
   } */
 
 .sub_body_head{
-  font-size: 40px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   
