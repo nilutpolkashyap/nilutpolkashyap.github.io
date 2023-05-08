@@ -349,10 +349,10 @@ html {
 }
 
 .introimage {
-  width: 40vw;
-  height: auto;
+  width: 56vmin;
+  /* height: auto; */
   border: 5px solid #555;
-  border-radius: 115px;
+  border-radius: 50%;
 }
 
 /* Main Body */
