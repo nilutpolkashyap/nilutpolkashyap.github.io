@@ -369,8 +369,8 @@ html {
 
 .about_me{
   /* padding-left: 40px; */
-  background-color: #5f06fa;
-  color: #FFFFFF;
+  background-color: #50defe;
+  color: #000000;
   border-style: double;
   border-radius: 15px;
   /* margin-left: auto; */
@@ -379,7 +379,7 @@ html {
   /* padding-top: 10px; */
   padding-left: 30px;
   padding-right: 30px;
-  /* padding-bottom: 10px; */
+  padding-bottom: 20px;
   /* margin-right: auto; */
   font-family: Arial, Helvetica, sans-serif;
   width: 75vw;
@@ -695,3 +695,17 @@ th{
   left: 0%;
   }
 }
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+
