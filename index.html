@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
   </head>          <!-- End of HEAD tag-->
 
@@ -30,7 +31,7 @@
 
     <!-- Cover image, name and quote -->
     <div class="header" >
-      <div>
+      <div style="padding-bottom: 20px;">
         <img class="introimage" align="center" src="cover1.png" >
       </div>   
       <div class="css-typing" align="center" >
@@ -58,25 +59,25 @@
       <!-- About me body -->
       <div class="about_me_body">
         <div class="about_me">
-          <h2>About ME</h2>
-          <p>
+          <h2 style="font-family: 'Brush Script MT', cursive; font-size: 50px;">About ME</h2>
+          <p style=" font-size: 17px;">
             A multidisciplinary engineering graduate with expertise in designing and building intelligent robotics systems. Profound knowledge
             in ROS, SLAM, Path Planning, Motion Planning and Computer Vision. Have a systematic approach towards research with
             experience in technical documentation aiming to carry out high impact research work.<br>
           </p>
-          <h2>Connect with ME:</h2>
+          <h3 style="font-family: 'Brush Script MT', cursive; font-size: 40px;">Connect with ME:</h3>
           <div style="margin-left: 30px;">
             <a href="https://www.linkedin.com/in/nilutpolk/"><i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;margin-left: 10px;"></i></a>
             <a href="https://github.com/nilutpolkashyap"><i class="fab fa-github fa-2x" style="color: #333333;margin-left: 10px;"></i></a>
             <a href="https://www.youtube.com/@nilutpolsroboticslab"><i class="fab fa-youtube fa-2x" style="color: #ed302f;margin-left: 10px;"></i></a>
           </div>
         </div>
-      </div> <br>
+      </div> <br><br>
 
-
+      
       <!-- Skills display table -->
+      <h1 class="sub_body_head" style="line-height: 0.2em;"><b>My Tech Stack</b></h1><br>
       <table class="tech_table" style="font-family:verdana" >
-        <caption class="table_caption" style="font-size: 6.8vmin;color: black; padding-bottom: 10px;"><b>My Tech Stack</b></caption>
         <tr >
           <th><img class="headerimage" align="center" src="cv_icon.jpg"></th>
           <th><img class="headerimage" align="center" src="robot_icon.jpg"></th>
@@ -114,21 +115,83 @@
       </table>
 
 
+      <br><br>
       <!-- Recent Work details body -->
       <div>
-        <h1 class="sub_body_head" style="font-size: 6.8vmin;color: black; padding-top: 10px; line-height: 0.2em;"><b>My Recent Projects</b></h1>
-        <h3  class="sub_body_head">View more of my projects <a href="https://github.com/nilutpolkashyap?tab=repositories"> Here!!</a></h3>
+        <h1 class="sub_body_head" style=" padding-top: 10px; line-height: 0.2em;"><b>My Recent Projects</b></h1>
+        <h3  class="sub_body_head" style="font-size: 4.8vmin;"><strong>View more of my projects <a style="color: darkseagreen;" href="https://github.com/nilutpolkashyap?tab=repositories"> Here!!</a></strong></h3>
 
-        
+        <center>
+          <div class="row container">
+            <div class="col-md-6 col-sm-12" style="border-right-style: solid; border-right-color: rgb(0, 0, 0);">
+              <div class="row">
+                <div class="col-md-12 col-sm-6" >
+                  <h1 class="projectname">BUG Robot</h1>
+                </div>
+                <div class="col-md-12 col-sm-6" >
+                  <img class="project_image_box" align="center" src="https://raw.githubusercontent.com/nilutpolkashyap/bug_robot/main/resources/bug0_output.png" >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12" style="border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 10px;">
+              <p class="project_details" style="padding: 10px;">Algorithm and Simulation of Bug 0, 1, 2 Algorithms<br>
+                <b>Tech Stack - </b> ROS, Gazebo, Python 3<br><br>
+                <button class="button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/bug_robot">GitHub Repository</a>  </span></button> 
+              </p>
+            </div>
+          </div>
+        </center><br>
+
+        <center>
+          <div class="row container">
+            <div class="col-md-6 col-sm-12" style="border-right-style: solid; border-right-color: rgb(0, 0, 0);">
+              <div class="row">
+                <div class="col-md-12 col-sm-6" >
+                  <h1 class="projectname">Autonomous Navigation Robot</h1>
+                </div>
+                <div class="col-md-12 col-sm-6" >
+                  <img class="project_image_box" align="center" style="width: 53vmin;" src="https://raw.githubusercontent.com/nilutpolkashyap/auto_nav_robot/main/images/output.png" >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12" style="border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 10px;">
+              <p class="project_details" style="padding: 10px;">Robot with SLAM & Autonomous Navigation<br>
+                <b>Tech Stack - </b> ROS, Gazebo, Python 3<br>
+                <button class="button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/auto_nav_robot">GitHub Repository</a>  </span></button> 
+              </p>
+            </div>
+          </div>
+        </center><br>
+
+        <center>
+          <div class="row container">
+            <div class="col-md-6 col-sm-12" style="border-right-style: solid; border-right-color: rgb(0, 0, 0);">
+              <div class="row">
+                <div class="col-md-12 col-sm-6" >
+                  <h1 class="projectname">Gripper Robot</h1>
+                </div>
+                <div class="col-md-12 col-sm-6" >
+                  <img class="project_image_box" align="center" style="width: 55vmin;" src="https://raw.githubusercontent.com/nilutpolkashyap/gripper_bot/main/images/results1.JPG" >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12" style="border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 10px;">
+              <p class="project_details" style="padding: 10px;">Robot Simulation with Gripper and GUI.<br>
+                <b>Tech Stack - </b> ROS, Gazebo, Python 3<br>
+                <button class="button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/gripper_bot">GitHub Repository</a>  </span></button> 
+              </p>
+            </div>
+          </div>
+        </center><br>
 
 
-        <div class="projectbox"><h1 class="projectname">BUG Robot</h1>
+
+        <!-- <div class="projectbox"><h1 class="projectname">BUG Robot</h1>
           <p style="padding: 10px;">Bug 0, 1, 2 Algorithms
             <img class="project_image_box" align="right" src="https://raw.githubusercontent.com/nilutpolkashyap/bug_robot/main/resources/bug0_output.png" >   <br><br>
             Bug 0, 1, 2 Algorithms
           </p><br>
           <button class="button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/bug_robot">GitHub Repository</a>  </span></button> 
-          <!-- <button class="button" style="vertical-align:middle"><span> <a href="#">Demo Video</a> </span></button>  -->
         </div>  
         <br>
 
@@ -148,7 +211,7 @@
           </p><br>
           <button class="button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/gripper_bot">GitHub Repository</a>  </span></button> 
         </div>  
-        <br>
+        <br> -->
 
         <!-- <div class="projectbox"><h1 class="projectname">Maze Solving Robot</h1>
           <p style="padding: 10px;">Line Follower and Maze Solver Robot Using OpenCV
@@ -159,11 +222,11 @@
         </div>   -->
       </div>
 
-
+      <br>
       <!-- Work Experience body -->
       <div>
-        <h1 class="sub_body_head" style="font-size: 6.8vmin;color: black; padding-top: 10px; line-height: 0.2em;"><b>Work Experience</b></h1>
-        <h3  class="sub_body_head" style="font-size: 4.8vmin;">View my Resume <a href="https://www.linkedin.com/in/nilutpolk/details/experience/"> Here!!</a></h3>
+        <h1 class="sub_body_head" style=" line-height: 0.2em;"><b>Work Experience</b></h1>
+        <h3  class="sub_body_head" style="font-size: 4.8vmin;"><strong>View my Resume <a style="color: darkseagreen;" href="https://www.linkedin.com/in/nilutpolk/details/experience/"> Here!!</a></strong></h3>
         
         <!-- <div class="projectbox"><h1 class="jobname">Computer Vision Intern - iNeuron Intelligence Pvt Ltd </h1>
           <div style="font-size: 18px;"><b>ROS2, Python, OpenCV, TensorFlow</b></div>
@@ -212,7 +275,7 @@
         
     <!-- Website footer containing developer details -->
     <footer>
-      <p align="center" style="color:coral;">Website Developed By : Nilutpol Kashyap <a style="color:coral;" href="https://github.com/nilutpolkashyap">@nilutpolkashyap</a></p>
+      <p align="center" style="color:rgb(0, 0, 0);">Website Developed By : Nilutpol Kashyap <a style="color:rgb(207, 40, 40);" href="https://github.com/nilutpolkashyap">@nilutpolkashyap</a></p>
     </footer> 
           
     <!-- Navigation Bar JS script -->

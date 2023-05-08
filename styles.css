@@ -62,25 +62,7 @@ html {
   margin: 5px;
 }
 
-.project_image_box {
-  border: 5px solid #555;
-  width: 30%;
-  float: right;
-  border-radius: 20px;
-}
 
-.project_image_left {
-  border: 5px solid #555;
-  width: 30%;
-  float: left;
-  border-radius: 20px;
-}
-
-.project_image_box:hover{
-  -moz-box-shadow: 0 0 10px #ccc;
-  -webkit-box-shadow: 0 0 10px #ccc;
-  box-shadow: 0 0 10px #ccc;
-}
 
 .glowtext {
   font-size: 25px;
@@ -167,7 +149,8 @@ html {
     background: linear-gradient(-45deg, #211889, #0b206d, #0B0B3B, #3f0847);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     text-align: center;
     color: #04B404;
     width: vw;
@@ -341,7 +324,7 @@ html {
 
 /* Header image */
 .headerimage {
-  width: 18vw;
+  width: 28vmin;
   height: auto;
   border: 5px solid #555;
   border-radius: 115px;
@@ -373,16 +356,15 @@ html {
   color: #000000;
   border-style: double;
   border-radius: 15px;
-  /* margin-left: auto; */
   margin-left: auto;
   margin-right: auto;
-  /* padding-top: 10px; */
+  padding-top: 15px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
   /* margin-right: auto; */
   font-family: Arial, Helvetica, sans-serif;
-  width: 75vw;
+  width: 80vw;
   margin: auto;
 }
 
@@ -403,7 +385,7 @@ html {
   margin: auto;
 }
 
-.projectbox {
+/* .projectbox {
 
   background-color: #000000;
   width: 65vw;
@@ -416,14 +398,41 @@ html {
   border-radius: 10px;
   padding: 10px;
   margin: auto;
-
-  /*background: linear-gradient(45deg, #2A0A12, #120A2A, #181907, #191007); */
-  /*background:   url('bricks.jpg'); */
-}
+} */
 
 .projectname{
-  font-size: 180%;
+  font-size: 220%;
+  font-family: Georgia, serif;
+  color: #ffffff;
 }
+
+.project_image_box {
+  /* border: 5px solid #555; */
+  width: 60vmin;
+  /* float: right; */
+  /* border-radius: 20px; */
+  /* padding-top: 10px; */
+}
+
+.project_image_left {
+  border: 5px solid #555;
+  width: 30%;
+  float: left;
+  border-radius: 20px;
+}
+
+.project_image_box:hover{
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.project_details{
+  color: #ffffff;
+  font-size: 130%;
+}
+
+
 
 .jobname{
   font-size: 150%;
@@ -438,7 +447,6 @@ html {
 }
 
 .tech_table{
-  
   border: 1px solid #18232a;
   border-collapse: collapse;
   margin-left: auto;
@@ -487,14 +495,14 @@ td{
 }
 
 th{
-  padding-top: 35px;
+  padding-top: 10px;
   font-size: 3.4vw;
   /* padding-bottom: 50px; */
 }
 
 .table_topics{
   color: #a6ccc6;
-  font-size: 20px;
+  font-size: 18px;
 }
 
   /* #tech_header{
@@ -505,9 +513,12 @@ th{
   } */
 
 .sub_body_head{
+  font-size: 7.4vmin;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: black;
 }
 
 
