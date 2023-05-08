@@ -406,13 +406,13 @@ html {
   color: #ffffff;
 }
 
-.project_image_box {
+/* .project_image_box { */
   /* border: 5px solid #555; */
-  width: 60vmin;
+  /* width: 50vmin; */
   /* float: right; */
   /* border-radius: 20px; */
   /* padding-top: 10px; */
-}
+/* } */
 
 .project_image_left {
   border: 5px solid #555;
