@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   </head>          <!-- End of HEAD tag-->
 
@@ -32,7 +34,7 @@
     <!-- Cover image, name and quote -->
     <div class="header" >
       <div >
-        <img class="introimage" align="center" src="cover1.png" >
+        <img class="introimage" align="center" src="images/cover1.png" >
       </div>   
       <div class="css-typing" align="center" >
         <p class="nameheader">Hi, I Am NILUTPOL KASHYAP</p>
@@ -47,10 +49,10 @@
 
     <!-- Navigation bar buttons -->
     <div id="navbar">
-      <a class="active" href="#">HOME</a>
-      <!-- <a href="#" >PROJECTS</a>
-      <a href="#" >TIMELINE</a>
-      <a href="#" >EXPERIENCES</a>
+      <a class="border-right active" href="#">HOME</a>
+      <a class="border-right" href="#">PROJECTS</a>
+      <a class="border-right" href="#" >SERVICES</a>
+      <!-- <a href="#" >EXPERIENCES</a>
       <a href="#" >ACHEIVEMENTS</a> 
       <a href="mailto:nilutpolrobotics@gmail.com" style="float: right" >📲 CONTACT ME 📫</a> -->
       <!-- <a href="https://github.com/nilutpolkashyap" style="float: right"  class="fa fa-github social"> GITHUB </a>
@@ -70,6 +72,25 @@
             in ROS, SLAM, Path Planning, Motion Planning and Computer Vision. Have a systematic approach towards research with
             experience in technical documentation aiming to carry out high impact research work.<br>
           </p>
+
+          <div >
+            <button type="button" class="btn rounded-pill more_about_me" style="background-color: #4755b0;">
+              <a class="more_about_me_link" href="#">Read More Here...........</a>
+            </button>
+          </div>
+          <!-- <button id="myButton">Click Me</button>
+          <p id="count"></p>
+          <script>
+              var count = 0;
+              var button = document.getElementById("myButton");
+              var countDisplay = document.getElementById("count");
+              button.addEventListener("click", function() {
+                count++;
+                countDisplay.innerHTML = count;
+              });
+          </script> -->
+
+
           <!-- <h3 style="font-family: 'Brush Script MT', cursive; font-size: 40px;">Connect with ME:</h3>
           <div style="margin-left: 30px;">
             <a href="https://www.linkedin.com/in/nilutpolk/"><i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;margin-left: 10px;"></i></a>&emsp;
@@ -84,9 +105,9 @@
       <h1 class="sub_body_head" style="line-height: 0.2em;"><b>My Tech Stack</b></h1><br>
       <table class="tech_table" style="font-family:verdana" >
         <tr >
-          <th><img class="headerimage" align="center" src="cv_icon.jpg"></th>
-          <th><img class="headerimage" align="center" src="robot_icon.jpg"></th>
-          <th><img class="headerimage" align="center" src="ml_icon.jpg"></th>
+          <th><img class="headerimage" align="center" src="images/cv_icon.jpg"></th>
+          <th><img class="headerimage" align="center" src="images/robot_icon.jpg"></th>
+          <th><img class="headerimage" align="center" src="images/ml_icon.jpg"></th>
         </tr>
         <tr>
           <th style="font-size: 5.3vmin;">Computer Vision</th>
@@ -141,7 +162,7 @@
             <div class="col-md-6 col-sm-12" style="border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 10px;">
               <p class="project_details" style="padding: 10px;">Algorithm and Simulation of Bug 0, 1, 2 Algorithms<br>
                 <b>Tech Stack - </b> ROS, Gazebo, Python 3<br><br>
-                <button class="button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/bug_robot">GitHub Repository</a>  </span></button> 
+                <button class="project_button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/bug_robot">GitHub Repository</a>  </span></button> 
               </p>
             </div>
           </div>
@@ -162,7 +183,7 @@
             <div class="col-md-6 col-sm-12" style="border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 10px;">
               <p class="project_details" style="padding: 10px;">Robot with SLAM & Autonomous Navigation<br>
                 <b>Tech Stack - </b> ROS, Gazebo, Python 3<br><br>
-                <button class="button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/auto_nav_robot">GitHub Repository</a>  </span></button> 
+                <button class="project_button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/auto_nav_robot">GitHub Repository</a>  </span></button> 
               </p>
             </div>
           </div>
@@ -183,7 +204,7 @@
             <div class="col-md-6 col-sm-12" style="border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 10px;">
               <p class="project_details" style="padding: 10px;">Robot Simulation with Gripper and GUI.<br>
                 <b>Tech Stack - </b> ROS, Gazebo, Python 3<br><br>
-                <button class="button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/gripper_bot">GitHub Repository</a>  </span></button> 
+                <button class="project_button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/gripper_bot">GitHub Repository</a>  </span></button> 
               </p>
             </div>
           </div>
@@ -204,7 +225,7 @@
             <div class="col-md-6 col-sm-12" style="border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 10px;">
               <p class="project_details" style="padding: 10px;">Line Follower and Maze Solver Robot Using OpenCV.<br>
                 <b>Tech Stack - </b> ROS, Gazebo, Python 3<br><br>
-                <button class="button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/maze_robot">GitHub Repository</a>  </span></button> 
+                <button class="project_button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/maze_robot">GitHub Repository</a>  </span></button> 
               </p>
             </div>
           </div>
@@ -217,7 +238,7 @@
             <img class="project_image_box" align="right" src="https://raw.githubusercontent.com/nilutpolkashyap/bug_robot/main/resources/bug0_output.png" >   <br><br>
             Bug 0, 1, 2 Algorithms
           </p><br>
-          <button class="button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/bug_robot">GitHub Repository</a>  </span></button> 
+          <button class="project_button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/bug_robot">GitHub Repository</a>  </span></button> 
         </div>  
         <br>
 
@@ -319,6 +340,9 @@
         }
       }
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   </body>
 </html>

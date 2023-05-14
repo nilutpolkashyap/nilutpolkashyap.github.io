@@ -3,7 +3,7 @@ html {
 }
 
 
-.button {
+.project_button {
   display: inline-block;
   border-radius: 4px;
   background-color: #0cfb9a;
@@ -20,14 +20,14 @@ html {
   margin: 5px;
 }
 
-.button span {
+.project_button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.project_button span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -36,11 +36,11 @@ html {
   transition: 0.5s;
 }
 
-.button:hover span {
+.project_button:hover span {
   padding-right: 30px;
 }
 
-.button:hover span:after {
+.project_button:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -353,7 +353,7 @@ html {
 .about_me{
   /* padding-left: 40px; */
   background-color: #50defe;
-  color: #000000;
+  /* color: #000000; */
   border-style: double;
   border-radius: 15px;
   margin-left: auto;
@@ -366,6 +366,23 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   width: 80vw;
   margin: auto;
+}
+
+.more_about_me{
+  font-size: 120%;
+  border-radius: 10%;
+  background-color: #3f0847;
+}
+
+.more_about_me_link{
+  color: rgb(255, 255, 255);
+  font-family: monaco, monospace;
+  /* background-color: transparent;  */
+}
+
+.more_about_me_link:hover{
+  color: rgb(248, 224, 12);
+  /* background-color: transparent;  */
 }
 
 .skills_box{
