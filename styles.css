@@ -149,11 +149,11 @@ html {
     background: linear-gradient(-45deg, #211889, #0b206d, #0B0B3B, #3f0847);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 20px;
     text-align: center;
     color: #04B404;
-    width: vw;
+    /* width: vw; */
 }
 
 /* .contact_form {
