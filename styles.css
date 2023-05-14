@@ -83,7 +83,7 @@ html {
 
 
 /* Navigation bar */
-#navbar {
+#main_navbar {
   position: sticky;
   z-index:10;
   overflow: hidden;
@@ -91,7 +91,7 @@ html {
   font-family: "Georgia", Times, serif;
 }
 
-#navbar a {
+#main_navbar a {
   float: left;
   display: block;
   color:#FFFFFF;
@@ -101,17 +101,17 @@ html {
   font-size: 17px;
 }
 
-#navbar a:hover {
+#main_navbar a:hover {
   background-color: #ddd;
   color: black;
 }
 
-#navbar a.active {
+#main_navbar a.active {
   background-color: #7c13df;
   color: white;
 } 
 
-#navbar a.social {
+#main_navbar a.social {
   background-color: #66ffff;
   color: black;
   border: 5px;

@@ -48,15 +48,30 @@
     </div>
 
     <!-- Navigation bar buttons -->
-    <div id="navbar">
+    <!-- <div id="main_navbar">
       <a class="border-right active" href="#">HOME</a>
       <a class="border-right" href="#">PROJECTS</a>
       <a class="border-right" href="#" >SERVICES</a>
-      <!-- <a href="#" >EXPERIENCES</a>
-      <a href="#" >ACHEIVEMENTS</a> 
-      <a href="mailto:nilutpolrobotics@gmail.com" style="float: right" >📲 CONTACT ME 📫</a> -->
-      <!-- <a href="https://github.com/nilutpolkashyap" style="float: right"  class="fa fa-github social"> GITHUB </a>
-      <a href="https://www.linkedin.com/in/nilutpolk/"  style="float: right" class="fa fa-linkedin social"> LinkedIN </a> -->
+    </div> -->
+    
+
+    <div>
+      <nav class="sticky-top navbar navbar-expand-lg navbar-light" style="background-color: #3414b6;">
+        <a class="navbar-brand acitve" href="#">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
 
@@ -329,14 +344,14 @@
     <script>
       window.onscroll = function() {myFunction()};
 
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
+      var main_navbar = document.getElementById("main_navbar");
+      var sticky = main_navbar.offsetTop;
 
       function myFunction() {
         if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
+          main_navbar.classList.add("sticky")
         } else {
-          navbar.classList.remove("sticky");
+          main_navbar.classList.remove("sticky");
         }
       }
     </script>
