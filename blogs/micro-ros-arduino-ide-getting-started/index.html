@@ -65,82 +65,80 @@
     <div class="mainbody">
       <br>
       <!-- About me body -->
-      <div class="about_me_body">
-        <div class="about_me">
-          <div class="blog_title">
-            <h2 style="font-size: 7vmin;"><b>Getting Started with micro-ROS in Arduino IDE</b></h2>
-          </div>
-          <div>
-            <p style=" font-size: 17px;">
-              A <br>
-            </p>
-
-            <ol>
-              <li>The precompiled micro-ROS library can be found on the releases page of the micro-ROS GitHub repository. Download the ZIP 
-                file for the precompiled library correponding to your version of ROS 2 (e.g. galactic, foxy, etc.). Then from within the 
-                Arduino IDE, you can include the library in your application by navigating to Sketch -> Include Library -> Add .ZIP Library</li><br>
-
-              <li>Open the Arduino IDE (or if it is already open, close and re-open it). From here you should be able to open a micro-ROS 
-                example, e.g. File -> Examples -> micro_ros_arduino -> micro-ros_publisher. Verify that it compiles, and this would conclude 
-                the micro-ROS precompiled library installation.</li><br>
-
-              <li>Source the ROS 2 installation  
-                source /opt/ros/$ROS_DISTRO/setup.bash
-                </li><br>
-
-              <li>Create a workspace and download the micro-ROS tools  
-                mkdir microros_ws 
-                cd microros_ws/src
-                git clone -b $ROS_DISTRO https://github.com/micro-ROS/micro_ros_setup.git 
-                </li><br>
-
-              <li>Update dependencies using rosdep  
-                cd microros_ws/
-                sudo apt update && rosdep update rosdep install –from-paths src –ignore-src -y 
-                </li><br>
-
-              <li>Install pip  
-                sudo apt-get install python3-pip 
-                </li><br>
-
-              <li>Build micro-ROS tools and source them  
-                colcon build 
-                source install/local_setup.bash 
-                </li><br>
-
-              <li>Create firmware  
-                ros2 run micro_ros_setup create_firmware_ws.sh host 
-                </li><br>
-
-              <li>Build firmware  
-                ros2 run micro_ros_setup build_firmware.sh 
-                source install/local_setup.bash
-                </li><br>
-
-              <li>Download micro-ROS-Agent packages 
-                ros2 run micro_ros_setup create_agent_ws.sh 
-                </li><br>
-
-              <li>Build micro-ROS-Agent  
-                ros2 run micro_ros_setup build_agent.sh 
-                source install/local_setup.bash 
-                </li><br>
-
-              <li>Run micro-ROS-Agent
-                Serial over USB - 
-             ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0 -v6
-           UDP over WiFi- 
-             ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
-           </li><br>
-            </ol>
-
-        
-
-            <img class="project_image" width="60%" src="image1.png" alt="">
-
-          </div>
-          
+      <div class="blog_body">
+        <div class="blog_title">
+          <h1 style="font-size: 7vmin;"><b>Getting Started with micro-ROS in Arduino IDE</b></h1>
         </div>
+        <div>
+          <p style=" font-size: 17px;">
+            A <br>
+          </p>
+
+          <ol class="blog-body" style="padding-left: 6vmin;">
+            <li>The precompiled micro-ROS library can be found on the releases page of the micro-ROS GitHub repository. Download the ZIP 
+              file for the precompiled library correponding to your version of ROS 2 (e.g. galactic, foxy, etc.). Then from within the 
+              Arduino IDE, you can include the library in your application by navigating to Sketch -> Include Library -> Add .ZIP Library</li><br>
+
+            <li>Open the Arduino IDE (or if it is already open, close and re-open it). From here you should be able to open a micro-ROS 
+              example, e.g. File -> Examples -> micro_ros_arduino -> micro-ros_publisher. Verify that it compiles, and this would conclude 
+              the micro-ROS precompiled library installation.</li><br>
+
+            <li>Source the ROS 2 installation  
+              source /opt/ros/$ROS_DISTRO/setup.bash
+              </li><br>
+
+            <li>Create a workspace and download the micro-ROS tools  
+              mkdir microros_ws 
+              cd microros_ws/src
+              git clone -b $ROS_DISTRO https://github.com/micro-ROS/micro_ros_setup.git 
+              </li><br>
+
+            <li>Update dependencies using rosdep  
+              cd microros_ws/
+              sudo apt update && rosdep update rosdep install –from-paths src –ignore-src -y 
+              </li><br>
+
+            <li>Install pip  
+              sudo apt-get install python3-pip 
+              </li><br>
+
+            <li>Build micro-ROS tools and source them  
+              colcon build 
+              source install/local_setup.bash 
+              </li><br>
+
+            <li>Create firmware  
+              ros2 run micro_ros_setup create_firmware_ws.sh host 
+              </li><br>
+
+            <li>Build firmware  
+              ros2 run micro_ros_setup build_firmware.sh 
+              source install/local_setup.bash
+              </li><br>
+
+            <li>Download micro-ROS-Agent packages 
+              ros2 run micro_ros_setup create_agent_ws.sh 
+              </li><br>
+
+            <li>Build micro-ROS-Agent  
+              ros2 run micro_ros_setup build_agent.sh 
+              source install/local_setup.bash 
+              </li><br>
+
+            <li>Run micro-ROS-Agent
+              Serial over USB - 
+              ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0 -v6
+              UDP over WiFi- 
+              ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
+            </li><br>
+          </ol>
+
+      
+
+          <img class="project_image" width="60%" src="image1.png" alt="">
+
+        </div>
+        
       </div> <br><br>
 
       <br>
