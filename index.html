@@ -29,12 +29,24 @@
 
     <!-- CSS tags -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="img_slider_styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Carousel Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="./carousel-assets/carousel.css" rel="stylesheet">
+    <link href="./carousel-assets/bootstrap.min.css" rel="stylesheet">
   </head>          <!-- End of HEAD tag-->
 
   <!-- Start of body tag -->
@@ -45,7 +57,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Cover image, name and quote -->
-    <div class="header" >
+    <!-- <div class="header" >
       <div >
         <img class="introimage" align="center" src="images/cover1.png" >
       </div>   
@@ -58,7 +70,7 @@
         <a href="https://github.com/nilutpolkashyap"><i class="fab fa-github fa-2x" style="color: #333333;margin-left: 10px;"></i></a>&emsp;
         <a href="https://www.youtube.com/@nilutpolsrobolab"><i class="fab fa-youtube fa-2x" style="color: #ed302f;margin-left: 10px;"></i></a>
       </div>
-    </div>
+    </div> -->
 
     <!-- Navigation bar buttons -->
     <nav class="sticky-top navbar navbar-expand-lg navbar-dark" style="background-color: #3414b6;">
@@ -89,6 +101,53 @@
       </div>
     </nav>
 
+    <div id="myCarousel" class="carousel carousel-dark slide mb-6 carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url(6.jpg);background-position: center center;"  data-bs-interval="5000">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(2.jpg);background-position: center center;"  data-bs-interval="3000">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(3.jpg);background-position: center center;"  data-bs-interval="2000">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <!-- Main Body -->
     <div class="mainbody">
@@ -177,147 +236,6 @@
           <td>Jupyter Notebook<br>TensorFlow<br>PyTorch<br>CUDA Toolkit<br>OpenAI Gym</td>
         </tr>
       </table>
-
-
-      <br><br>
-      <!-- Recent Projects details body -->
-      <!-- <div>
-        <h1 class="sub_body_head" style=" padding-top: 10px; line-height: 0.2em;"><b>My Recent Projects</b></h1>
-        <h3  class="sub_body_head" style="font-size: 4.8vmin;"><strong>View more of my projects <a style="color: darkseagreen;" href="https://github.com/nilutpolkashyap?tab=repositories"> Here!!</a></strong></h3>
-
-        <center>
-          <div class="row container">
-            <div class="col-md-6 col-sm-12" style="border-right-style: solid; border-right-color: rgb(0, 0, 0);">
-              <div class="row">
-                <div class="col-md-12 col-sm-6" >
-                  <h1 class="projectname">BUG Robot</h1>
-                </div>
-                <div class="col-md-12 col-sm-6" >
-                  <img class="project_image_box" align="center" style="width: 40vmin;" src="https://raw.githubusercontent.com/nilutpolkashyap/bug_robot/main/resources/bug0_output.png" >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12" style="border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 10px;">
-              <p class="project_details" style="padding: 10px;">Algorithm and Simulation of Bug 0, 1, 2 Algorithms<br>
-                <b>Tech Stack - </b> ROS, Gazebo, Python 3<br><br>
-                <button class="project_button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/bug_robot">GitHub Repository</a>  </span></button> 
-              </p>
-            </div>
-          </div>
-        </center><br>
-
-        <center>
-          <div class="row container">
-            <div class="col-md-6 col-sm-12" style="border-right-style: solid; border-right-color: rgb(0, 0, 0);">
-              <div class="row">
-                <div class="col-md-12 col-sm-6" >
-                  <h1 class="projectname">Autonomous Navigation Robot</h1>
-                </div>
-                <div class="col-md-12 col-sm-6" >
-                  <img class="project_image_box" align="center" style="width: 40vmin;" src="https://raw.githubusercontent.com/nilutpolkashyap/auto_nav_robot/main/images/output.png" >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12" style="border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 10px;">
-              <p class="project_details" style="padding: 10px;">Robot with SLAM & Autonomous Navigation<br>
-                <b>Tech Stack - </b> ROS, Gazebo, Python 3<br><br>
-                <button class="project_button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/auto_nav_robot">GitHub Repository</a>  </span></button> 
-              </p>
-            </div>
-          </div>
-        </center><br>
-
-        <center>
-          <div class="row container">
-            <div class="col-md-6 col-sm-12" style="border-right-style: solid; border-right-color: rgb(0, 0, 0);">
-              <div class="row">
-                <div class="col-md-12 col-sm-6" >
-                  <h1 class="projectname">Gripper Robot</h1>
-                </div>
-                <div class="col-md-12 col-sm-6" >
-                  <img class="project_image_box" align="center" style="width: 40vmin;" src="https://raw.githubusercontent.com/nilutpolkashyap/gripper_bot/main/images/results1.JPG" >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12" style="border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 10px;">
-              <p class="project_details" style="padding: 10px;">Robot Simulation with Gripper and GUI.<br>
-                <b>Tech Stack - </b> ROS, Gazebo, Python 3<br><br>
-                <button class="project_button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/gripper_bot">GitHub Repository</a>  </span></button> 
-              </p>
-            </div>
-          </div>
-        </center><br>
-
-        <center>
-          <div class="row container">
-            <div class="col-md-6 col-sm-12" style="border-right-style: solid; border-right-color: rgb(0, 0, 0);">
-              <div class="row">
-                <div class="col-md-12 col-sm-6" >
-                  <h1 class="projectname">Maze Solving Robot</h1>
-                </div>
-                <div class="col-md-12 col-sm-6" >
-                  <img class="project_image_box" align="center" style="width: 40vmin;" src="https://raw.githubusercontent.com/nilutpolkashyap/maze_robot/main/resources/line_follower_algorithm.JPG" >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12" style="border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 10px;">
-              <p class="project_details" style="padding: 10px;">Line Follower and Maze Solver Robot Using OpenCV.<br>
-                <b>Tech Stack - </b> ROS, Gazebo, Python 3<br><br>
-                <button class="project_button" style="vertical-align:middle"><span> <a href="https://github.com/nilutpolkashyap/maze_robot">GitHub Repository</a>  </span></button> 
-              </p>
-            </div>
-          </div>
-        </center><br>
-      </div> -->
-
-      <br>
-      <!-- Work Experience body -->
-      <div>
-        <!-- <h1 class="sub_body_head" style=" line-height: 0.2em;"><b>Work Experience</b></h1>
-        <h3  class="sub_body_head" style="font-size: 4.8vmin;"><strong>View my Resume <a style="color: darkseagreen;" href="https://www.linkedin.com/in/nilutpolk/details/experience/"> Here!!</a></strong></h3> -->
-        
-        <!-- <div class="projectbox"><h1 class="jobname">Computer Vision Intern - iNeuron Intelligence Pvt Ltd </h1>
-          <div style="font-size: 18px;"><b>ROS2, Python, OpenCV, TensorFlow</b></div>
-          <p><div style="font-size: 17px;float: right;"><b>Aug 2022 - Dec 2022</b></div><br><br>
-            • Developed Gazebo world environment for self-driving vehicle simulation.<br>
-            • Collected self-driving car dataset and performed data extraction.<br>
-            • Working on the implementation of Cruise Control and T-junction Navigation Algorithms.</p> <br>
-        </div>
-        <br>
-
-        <div class="projectbox"><h1 class="jobname">Robotics Software Intern - Jetbrain Robotics Pvt. Ltd., Gurgaon</h1>
-          <div style="font-size: 18px;"><b>ROS 2, Gazebo, C++, OpenCV, Jetson Xavier, YoloV5, TensorRT</b></div>
-          <p><div style="font-size: 17px;float: right;"><b>Apr 2022 - Jul 2022</b></div><br><br>
-            • Trained Custom Yolov5 model for object detection on custom annotated dataset.<br>
-            • Converted Yolov5 model to TensorRT for inference in Jetson Xavier devices with GPU acceleration.<br>
-            • Integrated Zed 2 camera with TensorRT object detection model for depth calculation of detected objects using Point Clouds.<br>
-            • Developed Docker Images of TensorRT object Detection and Depth Calculation with Zed 2 camera for production-ready
-            deployment on Jetson Xavier devices.</p> <br>
-        </div>
-        <br>
-            
-        <div class="projectbox"><h1 class="jobname">Research & Development Intern - Tech-In-Farm Pvt. Ltd.</h1>
-          <div style="font-size: 18px;"><b>Python, IOT, Raspberry Pi, Sensors, Machine Learning</b></div>
-          <p><div style="font-size: 17px;float: right;"><b>Nov 2021 - Apr 2022</b> </div><br><br>
-            • Developed a software for getting weather conditions for a particular area using weather APIs. <br>
-            • Implemented an algorithm for determining the amount of water required by plants using sensor data. <br>
-            • Developed a recommender system for getting the best suited crops for growth based out of a number of weather and
-            sensor data.
-          </p> <br>
-        </div> 
-
-        <br>
-        
-        <div class="projectbox"><h1 class="jobname">Robotics Software Intern - Zarp Labs R&D Pvt. Ltd.</h1>
-          <div style="font-size: 18px;"><b>ROS, Gazebo, Fusion360, Python, Flask</b></div>
-          <p><div style="font-size: 17px;float: right;"><b>Jun 2021 - Sept 2021</b></div><br><br>
-            • Collaborated in design and development of a Humanoid robot in Gazebo simulation. <br>
-            • Implemented ROS based Autonomous Navigation and Path Planning on the robot. <br>
-            • Created a web UI dashboard for sending control signals using ROS.</p> <br>
-        </div>  -->
-      </div>
-
-      <br>
     </div>
     
         
@@ -341,9 +259,65 @@
         }
       }
     </script>
+    <script src="./carousel-assets/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('.slide');
+      var btns = document.querySelectorAll('.btn');
+      let currentSlide = 1;
+  
+      // Javascript for image slider manual navigation
+      var manualNav = function(manual){
+        slides.forEach((slide) => {
+          slide.classList.remove('active');
+  
+          btns.forEach((btn) => {
+            btn.classList.remove('active');
+          });
+        });
+  
+        slides[manual].classList.add('active');
+        btns[manual].classList.add('active');
+      }
+  
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          manualNav(i);
+          currentSlide = i;
+        });
+      });
+  
+      // Javascript for image slider autoplay navigation
+      var repeat = function(activeClass){
+        let active = document.getElementsByClassName('active');
+        let i = 1;
+  
+        var repeater = () => {
+          setTimeout(function(){
+            [...active].forEach((activeSlide) => {
+              activeSlide.classList.remove('active');
+            });
+  
+          slides[i].classList.add('active');
+          btns[i].classList.add('active');
+          i++;
+  
+          if(slides.length == i){
+            i = 0;
+          }
+          if(i >= slides.length){
+            return;
+          }
+          repeater();
+        }, 5000);
+        }
+        repeater();
+      }
+      repeat();
+      </script>  
 
   </body>
 </html>
