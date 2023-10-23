@@ -174,8 +174,7 @@ html {
 
 
 
-/* Name Header Typewriting Effect*/
-
+/* Name Header Typewriting Effect Start*/
 .css-typing p {
   /* border-right: .15em solid orange; */
   font-family: "Courier";
@@ -304,23 +303,84 @@ html {
     border-color: tranparent;
   }
 }
-
-
+/* Name Header Typewriting Effect End*/
 
 /* Name Header*/
 .nameheader {
-  /* font-size: 70px; */
-  font-size: 6.0vmin;
-  /* padding-left: 40px; */
+  font-size: 6.5vmin;
   font-weight: 800;
 }
 
 .quoteheader {
-  /* font-size: 30px; */
   font-size: 5.2vmin;
-  /* padding-left: 60px; */
-  font-weight: 800;
+  /* font-weight: 800; */
 }
+
+/* Typing effect NEW start */
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing {
+  width: 28ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 6.0vmin;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+/* Typing effect NEW End */
+
+/* Fade-In effect Start */
+.fade-in-text {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* Fade-In Effect End */
 
 /* Header image */
 .headerimage {
@@ -364,7 +424,7 @@ html {
   padding-bottom: 20px;
   /* margin-right: auto; */
   font-family: Arial, Helvetica, sans-serif;
-  width: 80vw;
+  width: 85vw;
   margin: auto;
 }
 
@@ -376,7 +436,7 @@ html {
 
 .more_about_me_link{
   color: rgb(255, 255, 255);
-  font-family: monaco, monospace;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   /* background-color: transparent;  */
 }
 
