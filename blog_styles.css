@@ -24,15 +24,6 @@ a{
     margin-bottom: 2.8rem;
 }
 
-.header_title{
-    margin-bottom: 1rem;
-    font-size: 1.9rem;
-    line-height: 2rem;
-    font-weight: 700;
-    text-align: center;
-    color: black;
-}
-
 .header_desc{
     max-width: 568px;
     text-align: center;

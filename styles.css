@@ -404,6 +404,15 @@ html {
   background: linear-gradient(0deg, #7303d4, #3610a4, #349ddd, #600aaa);
 }
 
+.header_title{
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+
 
 /* .about_me_body{
   width: 75vw;
@@ -822,7 +831,7 @@ th{
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 1.2rem;
   width: 33.33%;
   border-right: none;
 }
