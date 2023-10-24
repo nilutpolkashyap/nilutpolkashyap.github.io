@@ -157,3 +157,11 @@ a{
     color: rgb(34, 0, 255);
 }
 
+.footer_desc{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(252, 242, 242);
+    margin: 0 auto;
+    padding-top: 15px;
+    font-size: 25px;
+}
