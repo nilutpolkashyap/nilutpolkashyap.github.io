@@ -384,7 +384,7 @@ html {
 
 /* Header image */
 .headerimage {
-  width: 28vmin;
+  width: 24vmin;
   height: auto;
   border: 5px solid #555;
   border-radius: 115px;
@@ -533,6 +533,7 @@ html {
 }
 
 .tech_table{
+  width: 85vw;
   border: 1px solid #18232a;
   border-collapse: collapse;
   margin-left: auto;
@@ -544,16 +545,6 @@ html {
   background-color: #18232a;
   color: #FFFFFF;
   padding-bottom: 30px;
-
-  /* width: 60%;
-  border: 15px;
-  color: #FFFFFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-color: #000000;
-  border-style: solid;
-  border-radius: 10px;
-  padding: 20px;
-  margin: auto; */
 }
 
 th, td{
@@ -576,7 +567,7 @@ th, td{
 }
 
 td{
-  width: 30vw;
+  /* width: 35vw; */
   border-top: 2px solid rgb(29, 19, 112);
 }
 
@@ -591,18 +582,11 @@ th{
   font-size: 18px;
 }
 
-  /* #tech_header{
-    padding-top: 35px;
-    font-size: 6.0vw;
-    padding-bottom: 50px;
-    border-color: #e2cece;
-  } */
-
 .sub_body_head{
-  font-size: 7.4vmin;
+  font-size: 5.0vmin;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   padding-top: 10px;
   color: black;
 }
@@ -858,7 +842,7 @@ th{
 
 /* Start Dropdown section */
 .collapsible {
-  background-color: #777;
+  background-color: #5034ec;
   color: white;
   cursor: pointer;
   padding: 18px;

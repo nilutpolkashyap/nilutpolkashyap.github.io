@@ -14,7 +14,7 @@ a{
 }
 
 .container{
-    max-width: 66vw;
+    max-width: 80vw;
     padding: 2rem 1rem;
     margin: 0 auto;
     /* background-color: aqua; */
@@ -93,7 +93,7 @@ a{
 }
 
 .card_title{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
     line-height: 1.5rem;
     margin-bottom: 0.3rem;
@@ -107,7 +107,7 @@ a{
 
 
 .card_desc{
-    color: rgb(113, 107, 107);
+    color: rgb(236, 236, 242);
     font-size: 1rem;
 }
 
@@ -116,7 +116,7 @@ a{
     justify-content: space-between;
     align-items: flex-end;
     padding: 0 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .author_container{
@@ -152,8 +152,8 @@ a{
     font-size: 0.79rem;
     border: 1px solid rgb(76, 71, 71);
     border-radius: 4px;
-    line-height: 1.3rem;
+    line-height: 1.6rem;
     padding: 0.25rem 0.5rem;
-    color: grey;
+    color: rgb(34, 0, 255);
 }
 
