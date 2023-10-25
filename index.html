@@ -172,41 +172,70 @@
             <th style="font-size: 5.0vmin;">Robotics</th>
             <th style="font-size: 5.0vmin;">Machine Learning</th>
           </tr>
-          <!-- <tr>
-            <td class="table_topics" colspan="3"><b>Things I enjoy doing:</b></td>
-          </tr>
-          <tr>
-            <td>Image Processing<br>Object Detection<br>Stereo Vision<br></td>
-            <td>3D Designing<br>Simulation<br>Path Plannig<br>Perception<br>Navigation</td>
-            <td>Feature Engineering<br>CNN<br>Deep Learning<br>GAN<br></td>
-          </tr>
-          <tr>
-            <td class="table_topics" colspan="3"><b>Languages I speak:</b></td>
-          </tr>
-          <tr>
-            <td>C++<br>Python</td>
-            <td>C++<br>Python<br>JavaScript<br></td>
-            <td>Python<br>C++</td>
-          </tr>
-          <tr>
-            <td class="table_topics" colspan="3"><b>Tools I use:</b></td>
-          </tr>
-          <tr>
-            <td>Jupyter Notebook<br>VS Code<br>Intel OpenVINO<br>OpenCV (C++)<br>OpenCV (Python)<br>Keras<br>Pytorch<br>TensorFlow</td>
-            <td>ROS/ROS 2<br>Gazebo<br>Rviz<br>Arduino<br>Fusion 360<br>Blender<br>Raspberry Pi<br>QT Designer</td>
-            <td>Jupyter Notebook<br>TensorFlow<br>PyTorch<br>CUDA Toolkit<br>OpenAI Gym</td>
-          </tr> -->
+          
         </table>
-      </div>
+      </div><br>
       <!-- End Skills display table -->
 
+      <!-- Start Recent Highlights Display -->
+      <h1 class="sub_body_head" style="line-height: 0.05em;padding-top: 20px;"><b>My Recent Highlights</b></h1><br>
+      <table class="tech_table" style="font-family:verdana" >
+      <div class="highlights_box">
+        <div class="tabhighlight">
+          <button class="tabhighlightlinks" onclick="openHighlight(event, 'Highlight1')" id="defaultOpen">Robotic Arm Simulation in ROS2 and Gazebo</button>
+          <button class="tabhighlightlinks" onclick="openHighlight(event, 'Highlight2')">Highlight 2</button>
+          <button class="tabhighlightlinks" onclick="openHighlight(event, 'Highlight3')">Highlight 3</button>
+          <button class="tabhighlightlinks" onclick="openHighlight(event, 'Highlight4')">Highlight 4</button>
+        </div>
+
+        <div id="Highlight1" class="tabhighlightcontent">
+          <h3>London</h3>
+          <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Highlight2" class="tabhighlightcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="Highlight3" class="tabhighlightcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <div id="Highlight4" class="tabhighlightcontent">
+          <h3>Guwahati</h3>
+          <p>Guwahati is the capital of Japan.</p>
+        </div>
+      </div><br><br>
+      <!-- End Recent Highlights Display -->
+      
     </div>
     <!-- End Main Body -->
-        
+
     <!-- Website footer containing developer details -->
     <footer>
       <p align="center" style="color:rgb(0, 0, 0);">Website Developed By : Nilutpol Kashyap <a style="color:rgb(207, 40, 40);" href="https://github.com/nilutpolkashyap">@nilutpolkashyap</a></p>
     </footer> 
+
+    <script>
+      function openHighlight(evt, highlightName) {
+        var i, tabhighlightcontent, tabhighlightlinks;
+        tabhighlightcontent = document.getElementsByClassName("tabhighlightcontent");
+        for (i = 0; i < tabhighlightcontent.length; i++) {
+          tabhighlightcontent[i].style.display = "none";
+        }
+        tabhighlightlinks = document.getElementsByClassName("tabhighlightlinks");
+        for (i = 0; i < tabhighlightlinks.length; i++) {
+          tabhighlightlinks[i].className = tabhighlightlinks[i].className.replace(" active", "");
+        }
+        document.getElementById(highlightName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
           
     <!-- Start Navigation Bar JS script -->
     <script>

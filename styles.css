@@ -799,7 +799,6 @@ th{
 
 .tab {
   overflow: hidden;
-
   margin: auto;
   position:relative;
   vertical-align:middle;
@@ -869,3 +868,62 @@ th{
   background-color: #f1f1f1;
 }
 /* End Dropdown section */
+
+/* Start Main page Highlight Tab Box */
+.highlights_box {
+  /* box-sizing: border-box; */
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  width: 60vw;
+  margin: auto;
+  border-right: none;
+  height: 300px;
+  
+}
+
+/* Style the tab */
+.tabhighlight {
+  float: left;
+  border: 1px solid #ccc;
+  /* background-color: #f1f1f1; */
+  width: 30%;
+  height: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tabhighlight button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 10px 16px;
+  height: fit-content;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tabhighlight button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tabhighlight button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabhighlightcontent {
+  background-color: indigo;
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  /* border-left: none; */
+  height: 100%;
+}
+/* End Main page Highlight Tab Box */
