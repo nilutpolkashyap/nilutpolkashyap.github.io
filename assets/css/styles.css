@@ -316,6 +316,20 @@ html {
   /* font-weight: 800; */
 }
 
+/* Start Animated Text Color */
+.animated-color{
+  /* font-family: monospace; */
+  /* font-size: 3em; */
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% { color: rgb(0, 0, 0); }
+  50% { color: rgb(52, 55, 84); }
+  100% { color: rgb(53, 56, 94); }
+}
+/* End Animated text Color */
+
 /* Typing effect NEW start */
 .wrapper {
   height: 100vh;
