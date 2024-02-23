@@ -405,16 +405,28 @@ html {
   font-size: 30%;
 }
 
-.introimage {
-  width: 56vmin;
+.aboutimage {
+  width: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 25vmax;
-  max-width: 100%;
+  /* max-width: 100%; */
   /* height: auto; */
   border: 5px solid #555;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .aboutimage {
+    width: 60%; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutimage {
+    width: 100%; /* Make images full width on very small screens */
+  }
 }
 
 /* Main Body */
@@ -969,3 +981,8 @@ th{
   }
 } */
 /*End of Featured Page CSS*/
+
+.instagram-post {
+  display: inline-block; /* Displays elements next to each other */
+  margin: 0 5px; /* Adds spacing between posts */
+}
