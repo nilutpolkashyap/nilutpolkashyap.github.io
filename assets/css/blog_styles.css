@@ -14,14 +14,14 @@ a{
 }
 
 .container{
-    max-width: 80vw;
+    max-width: 90vw;
     padding: 2rem 1rem;
     margin: 0 auto;
     /* background-color: aqua; */
 }
 
 .header_container{
-    margin-bottom: 2.8rem;
+    margin-bottom: 1.rem;
 }
 
 .header_desc{
@@ -59,6 +59,7 @@ a{
     flex-direction: column;
     border: 1px solid rgb(233, 224, 224);
     border-radius: 8px;
+    background-color: rgb(37, 28, 28);
 }
 
 .card_image_container{
@@ -79,6 +80,8 @@ a{
     position: absolute;
     height: 100%;
     width: 100%;
+    padding-bottom: 4px;
+    border-radius: 8px;
 }
 
 .card_title_container{
@@ -97,12 +100,12 @@ a{
     font-weight: 600;
     line-height: 1.5rem;
     margin-bottom: 0.3rem;
-    color: rgb(25, 23, 23);
+    color: rgb(255, 255, 255);
 }
 
 
 .card_title_anchor:hover .card_title{
-    color:rgb(67, 67, 191);
+    color:rgb(150, 150, 229);
 }
 
 
