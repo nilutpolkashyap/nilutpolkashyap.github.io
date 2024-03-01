@@ -449,6 +449,97 @@ html {
   margin: auto;
 } */
 
+/*Start of Intro Card Container*/
+.intro-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%; 
+}
+
+@media (max-width: 1024px) {
+  .intro-card-container {
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .intro-card-text {
+      flex-grow: 2; 
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-card-container {
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .intro-card-text {
+      flex-grow: 1; 
+  }
+}
+
+.intro-card-links,
+.intro-card-image,
+.intro-card-text {
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+  margin: 5px;
+}
+
+.intro-card-links-inside {
+  display: flex; /* Make links container flexbox */
+  justify-content: space-between; /* Space links evenly */
+}
+
+.intro-card-links a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.intro-card-image img {
+  width: 33vmin; /* Adjust image width if needed */
+}
+/*End of Intro Card Container*/
+
+/*Start of profile logo css*/
+.profiles-container {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+  justify-content: center;
+  max-width: 100vw;
+}
+
+.profiles-image-img {
+  width: 28%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 25vmax; */
+  /* max-width: 100%; */
+  /* height: auto; */
+  /* border: 5px solid #555; */
+  /* border-radius: 10px; */
+}
+
+@media (max-width: 768px) {
+  .profiles-image-img {
+    width: 55%; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .profiles-image-img {
+    width: 70%; /* Make images full width on very small screens */
+  }
+}
+
+/*end of profile logo css*/
+
 .about_me{
   /* padding-left: 40px; */
   background-color: #50defe;
@@ -458,8 +549,8 @@ html {
   margin-left: auto;
   margin-right: auto;
   padding-top: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 20px;
   /* margin-right: auto; */
   font-family: Arial, Helvetica, sans-serif;
@@ -822,7 +913,7 @@ th{
 /* Start About Page Tab */
 .tab_about_me{
   padding-top: 20px;
-  width: 85vw;
+  width: 95vw;
   margin: auto;
   border-right: none;
 }
@@ -1043,4 +1134,27 @@ th{
   }
 }
 /*End of Blogs Page Category Filter CSS*/
+
+/**/
+.pr-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: large;
+}
+.pr-list {
+  /* list-style: none; */
+  padding: 0;
+}
+.pr-item {
+  margin-bottom: 10px;
+}
+.pr-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.pr-link:hover {
+  text-decoration: underline;
+}
+/*End of Open source page CSS*/
 
