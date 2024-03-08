@@ -540,6 +540,14 @@ html {
 
 /*end of profile logo css*/
 
+.line {
+  width: 100%;
+  height: 0;
+  border: 2px solid #000000;
+  margin: 3px;
+  display:inline-block;
+}
+
 .about_me{
   /* padding-left: 40px; */
   background-color: #50defe;
