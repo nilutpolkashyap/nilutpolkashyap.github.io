@@ -65,7 +65,7 @@ a{
 .card_image_container{
     position: relative;
     overflow: hidden;
-    height: 7rem;
+    height: 12rem;
 }
 
 @media (min-width: 768px) {

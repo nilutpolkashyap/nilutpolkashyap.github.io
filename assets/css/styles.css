@@ -62,7 +62,14 @@ html {
   margin: 5px;
 }
 
-
+#audiobutton {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
 
 .glowtext {
   font-size: 25px;
@@ -431,8 +438,8 @@ html {
 
 /* Main Body */
 .mainbody {
-  /*background: linear-gradient(to bottom, #663300 0%, #120A2A 100%);*/
-  background: linear-gradient(0deg, #7303d4, #3610a4, #349ddd, #600aaa);
+  background: #3074e2;
+  /* background: linear-gradient(0deg, #7303d4, #3610a4, #349ddd, #600aaa); */
 }
 
 .header_title{
@@ -562,7 +569,7 @@ html {
   padding-bottom: 20px;
   /* margin-right: auto; */
   font-family: Arial, Helvetica, sans-serif;
-  width: 85vw;
+  width: 95vw;
   margin: auto;
 }
 
@@ -1098,12 +1105,12 @@ th{
   justify-content: center;
 }
 .category-title{
-  flex: 0 0 calc(16.6667% - 10px);
+  flex: 0 0 calc(10.6667% - 10px);
   display: flex;
   justify-content:center;
-  background: #a8a8a8;
-  padding: 5px;
-  color: #fff;
+  background: #ffffff;
+  padding: 2px;
+  color: #1e1a1a;
   margin: 5px;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -1112,7 +1119,7 @@ th{
   opacity: 0.8;
 }
 .category-title.active{
-  background-color: #bb3939;
+  background-color: #e77777;
 }
 .category-title li{
   padding: 0 10px;
@@ -1166,3 +1173,85 @@ th{
 }
 /*End of Open source page CSS*/
 
+/*Start of Linkedin Featured Image Post*/
+.img-wrapper-post {
+  height: 300px;
+  width:290px;
+  /* padding: 5px; */
+  /* background-color: blue; */
+  position: relative;
+  overflow-x:auto;  
+  overflow-y:auto;
+  display: inline-block;
+  scrollbar-color: rgb(0, 0, 0) rgb(255, 255, 255);
+  scrollbar-width: thin;
+}
+
+.img-wrapper-post > img {
+  position: relative;
+  /* height: 400px; */
+  width:97%;
+}
+/*End of Linkedin Featured Image Post*/
+
+/*Start of Achievements Card Container*/
+/* .achievements-card-container{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(233, 224, 224);
+  border-radius: 8px;
+  background-color: rgb(37, 28, 28);
+}
+
+.achievements-card-image-container{
+  position: relative;
+  overflow: hidden;
+  height: 12rem;
+}
+
+@media (min-width: 768px) {
+  .achievements-card-image-container{
+          height: 12rem;
+  }
+}
+
+.achievements-card-image{
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 4px;
+  border-radius: 8px;
+}
+
+.achievements-card-title-container{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.achievements-card-container:hover .card-image{
+  transform: scale(1.1);
+  transition-duration: 200ms;
+}
+
+.achievements-card-title{
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-bottom: 0.3rem;
+  color: rgb(255, 255, 255);
+}
+
+
+.achievements-card-title-anchor:hover .card-title{
+  color:rgb(150, 150, 229);
+}
+
+.achievements-creator-title{
+  padding-bottom: 4px;
+  color: aqua;
+} */
+/*End of Achievements Card Container*/
