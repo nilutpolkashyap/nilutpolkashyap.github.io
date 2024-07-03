@@ -62,6 +62,37 @@ a{
     background-color: rgb(37, 28, 28);
 }
 
+.project_card_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(233, 224, 224);
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.project_card_desc{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+.project_creator_title{
+    padding-bottom: 4px;
+    color: rgb(61, 23, 232);
+}
+
+.project_card_title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: rgb(0, 0, 0);
+}
+
+.project_card_title_anchor:hover .project_card_title{
+    color:rgb(0, 0, 240);
+}
+
 .card_image_container{
     position: relative;
     overflow: hidden;
