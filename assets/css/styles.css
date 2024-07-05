@@ -1421,11 +1421,22 @@ th{
   min-width: 0; /* Prevents flex items from overflowing */
 }
 
-
-
 @media (min-width: 768px) {
   .recent-projects-box {
       flex: 1 1 calc(33.333% - 10px); /* Three boxes per row on large screens */
   }
 }
 /*END  Index page recent projects*/
+
+/*Disable Text Selection Highlighting with CSS*/
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* color: #cc0000; */
+}
+/*End Disable Text Selection Highlighting with CSS*/
+
+
